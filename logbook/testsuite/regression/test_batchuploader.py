@@ -36,7 +36,7 @@ from invenio.base.wrappers import lazy_import
 from invenio.utils.shell import run_shell_command
 from invenio.utils.url import make_user_agent_string
 
-from invenio_demosite.testsuite.regression.test_bibupload import GenericBibUploadTest
+from logbook.testsuite.regression.test_bibupload import GenericBibUploadTest
 
 run_sql = lazy_import('invenio.legacy.dbquery:run_sql')
 get_last_taskid = lazy_import('invenio.legacy.bibsched.cli:get_last_taskid')

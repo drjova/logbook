@@ -15,24 +15,15 @@
 ##
 ## You should have received a copy of the GNU General Public License
 ## along with Invenio; if not, write to the Free Software Foundation, Inc.,
-## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+## 59 Temple Place, Suite 330, Boston, MA 02D111-1307, USA.
 
-from invenio.modules.indexer import fixtures as default
+from invenio.base.config import PACKAGES as _PACKAGES
 
-"""Update IdxINDEXData fixtures.
+PACKAGES = [
+    "logbook.base",
+    "logbook.modules.*",
+] + _PACKAGES
 
-
-.. code-block:: sql
-
-    UPDATE idxINDEX SET stemming_language='en' WHERE name
-    IN ('global','abstract','keyword','title','fulltext' ,'miscellaneous')
-
-"""
-
-for name in dir(default.IdxINDEXData):
-    if not name.startswith('IdxINDEX_'):
-        continue
-    index = getattr(default.IdxINDEXData, name)
-    if hasattr(index, name) and index.name in (
-            'global','abstract','keyword','title','fulltext', 'miscellaneous'):
-        index.stemming_language = u'en'
+DEPOSIT_TYPES = [
+    'logbook.modules.deposit.workflows.gist.gist',
+]

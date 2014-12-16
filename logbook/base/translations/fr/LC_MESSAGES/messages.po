@@ -20,115 +20,115 @@ msgstr ""
 "Language: fr\n"
 "X-Generator: Poedit 1.6.5\n"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:76
+#: logbook/modules/deposit/workflows/article.py:76
 msgid "Family name, First name"
 msgstr "Nom de famile, Prénom"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:87
+#: logbook/modules/deposit/workflows/article.py:87
 msgid "Creator name is required if you specify affiliation."
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:92
+#: logbook/modules/deposit/workflows/article.py:92
 msgid "Affiliation"
 msgstr "Affiliation"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:103
+#: logbook/modules/deposit/workflows/article.py:103
 msgid "Digital Object Identifier"
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:104
+#: logbook/modules/deposit/workflows/article.py:104
 msgid "e.g. 10.1234/foo.bar..."
 msgstr "par ex. 10.1234/foo.bar..."
 
-#: invenio_demosite/modules/deposit/workflows/article.py:120
+#: logbook/modules/deposit/workflows/article.py:120
 msgid "Publication date"
 msgstr "Date de publication"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:122
+#: logbook/modules/deposit/workflows/article.py:122
 msgid "Required. Format: YYYY-MM-DD."
 msgstr "Requis. Format: AAAA-MM-JJ"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:131
+#: logbook/modules/deposit/workflows/article.py:131
 msgid "Title"
 msgstr "Titre"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:146
+#: logbook/modules/deposit/workflows/article.py:146
 msgid "Authors"
 msgstr "Auteurs"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:147
+#: logbook/modules/deposit/workflows/article.py:147
 msgid "Add another author"
 msgstr "Ajouter un auteur"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:158
+#: logbook/modules/deposit/workflows/article.py:158
 msgid "Description"
 msgstr "Description"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:159
+#: logbook/modules/deposit/workflows/article.py:159
 msgid "Required."
 msgstr "Requis."
 
-#: invenio_demosite/modules/deposit/workflows/article.py:184
+#: logbook/modules/deposit/workflows/article.py:184
 msgid "Journal title"
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:185
-#: invenio_demosite/modules/deposit/workflows/article.py:209
-#: invenio_demosite/modules/deposit/workflows/article.py:216
-#: invenio_demosite/modules/deposit/workflows/article.py:223
-#: invenio_demosite/modules/deposit/workflows/article.py:251
+#: logbook/modules/deposit/workflows/article.py:185
+#: logbook/modules/deposit/workflows/article.py:209
+#: logbook/modules/deposit/workflows/article.py:216
+#: logbook/modules/deposit/workflows/article.py:223
+#: logbook/modules/deposit/workflows/article.py:251
 msgid "Optional."
 msgstr "Optionel."
 
-#: invenio_demosite/modules/deposit/workflows/article.py:189
-#: invenio_demosite/modules/deposit/workflows/article.py:194
-#: invenio_demosite/modules/deposit/workflows/article.py:199
+#: logbook/modules/deposit/workflows/article.py:189
+#: logbook/modules/deposit/workflows/article.py:194
+#: logbook/modules/deposit/workflows/article.py:199
 msgid "Journal title is required if you specify either volume, issue or pages."
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:208
+#: logbook/modules/deposit/workflows/article.py:208
 msgid "Volume"
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:215
+#: logbook/modules/deposit/workflows/article.py:215
 msgid "Issue"
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:222
+#: logbook/modules/deposit/workflows/article.py:222
 msgid "Pages"
 msgstr "Pages"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:242
+#: logbook/modules/deposit/workflows/article.py:242
 msgid "Keywords"
 msgstr "Mots-clés"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:243
+#: logbook/modules/deposit/workflows/article.py:243
 msgid "Add another keyword"
 msgstr "Ajouter un mot-clé"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:250
+#: logbook/modules/deposit/workflows/article.py:250
 msgid "Notes"
 msgstr "Notes"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:271
+#: logbook/modules/deposit/workflows/article.py:271
 msgid "New article"
 msgstr "Nouvel article"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:272
+#: logbook/modules/deposit/workflows/article.py:272
 msgid ""
 "Instructions: (i) Press \"Save\" to save your upload for editing later, as "
 "many times you like. (ii) Upload or remove  extra files in the bottom of the "
 "form. (iii) When ready, press \"Submit\" to finalize your upload."
 msgstr ""
 
-#: invenio_demosite/modules/deposit/workflows/article.py:305
+#: logbook/modules/deposit/workflows/article.py:305
 msgid "Article"
 msgstr "Article"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:306
+#: logbook/modules/deposit/workflows/article.py:306
 msgid "Articles"
 msgstr "Articles"
 
-#: invenio_demosite/modules/deposit/workflows/article.py:307
+#: logbook/modules/deposit/workflows/article.py:307
 msgid "Articles & Preprints"
 msgstr ""

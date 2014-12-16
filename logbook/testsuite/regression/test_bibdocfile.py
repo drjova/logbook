@@ -46,7 +46,7 @@ class BibDocFsInfoTest(InvenioTestCase):
         self.unique_name = self.my_bibrecdoc.propose_unique_docname('file')
         self.my_bibdoc = self.my_bibrecdoc.add_new_file(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             docname=self.unique_name)
         self.my_bibdoc_id = self.my_bibdoc.id
@@ -61,7 +61,7 @@ class BibDocFsInfoTest(InvenioTestCase):
         self.assertEqual(run_sql("SELECT last_version FROM bibdocfsinfo WHERE id_bibdoc=%s AND version=1 AND format='.jpg'", (self.my_bibdoc_id, ))[0][0], True)
         self.my_bibdoc.add_file_new_version(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.gif'))
         self.assertEqual(run_sql("SELECT MAX(version) FROM bibdocfsinfo WHERE id_bibdoc=%s", (self.my_bibdoc_id, ))[0][0], 2)
         self.assertEqual(run_sql("SELECT last_version FROM bibdocfsinfo WHERE id_bibdoc=%s AND version=2 AND format='.gif'", (self.my_bibdoc_id, ))[0][0], True)
@@ -171,7 +171,7 @@ class BibRecDocsTest(InvenioTestCase):
         #add bibdoc
         my_bibrecdoc.add_new_file(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             'Main', 'img_test', False, 'test add new file', 'test', '.jpg')
         my_bibrecdoc.add_bibdoc(doctype='Main', docname='file', never_fail=False)
@@ -180,7 +180,7 @@ class BibRecDocsTest(InvenioTestCase):
         #add bibdocfile in empty bibdoc
         my_added_bibdoc.add_file_new_version(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.gif'),
             description= 'added in empty bibdoc', comment=None, docformat=None,
             flags=['PERFORM_HIDE_PREVIOUS'])
@@ -194,7 +194,7 @@ class BibRecDocsTest(InvenioTestCase):
         #check file exists
         self.assertEqual(my_bibrecdoc.check_file_exists(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             '.jpg'), True)
         #get bibdoc names
@@ -235,7 +235,7 @@ class BibDocsTest(InvenioTestCase):
         timestamp1 = datetime(*(time.strptime("2011-10-09 08:07:06", "%Y-%m-%d %H:%M:%S")[:6]))
         my_bibrecdoc.add_new_file(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             'Main', 'img_test', False, 'test add new file', 'test', '.jpg',
             modification_date=timestamp1)
@@ -267,7 +267,7 @@ class BibDocsTest(InvenioTestCase):
         timestamp2 = datetime(*(time.strptime("2010-09-08 07:06:05", "%Y-%m-%d %H:%M:%S")[:6]))
         my_new_bibdoc.add_file_new_version(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             description= 'the new version', comment=None, docformat=None,
             flags=["PERFORM_HIDE_PREVIOUS"], modification_date=timestamp2)
@@ -318,7 +318,7 @@ class BibDocsTest(InvenioTestCase):
         timestamp4 = datetime(*(time.strptime("2012-11-10 09:08:07", "%Y-%m-%d %H:%M:%S")[:6]))
         my_new_bibdoc.add_file_new_format(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.gif'),
             version=None, description=None, comment=None, docformat=None,
             modification_date=timestamp4)
@@ -346,7 +346,7 @@ class BibDocsTest(InvenioTestCase):
 
         my_new_bibdoc.add_icon(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/icon-test.gif'),
             modification_date=timestamp4)
 
@@ -446,7 +446,7 @@ class BibDocFilesTest(InvenioTestCase):
         #FIXME InvenioBibDocFileError
         my_bibrecdoc.add_new_file(
             pkg_resources.resource_filename(
-                'invenio_demosite.testsuite.regression',
+                'logbook.testsuite.regression',
                 'data/test.jpg'),
             'Main', 'img_test', False, 'test add new file', 'test', '.jpg', modification_date=timestamp)
 

@@ -20,7 +20,7 @@
 from flask import Blueprint
 
 blueprint = Blueprint(
-    'demosite_deposit',
+    'logbook_deposit',
     __name__,
     template_folder='templates',
 )

@@ -29,7 +29,7 @@ from invenio.testsuite import make_test_suite, run_test_suite, nottest
 from invenio.base.globals import cfg
 from invenio.base.wrappers import lazy_import
 
-from invenio_demosite.testsuite.regression.test_bibupload import wipe_out_record_from_all_tables
+from logbook.testsuite.regression.test_bibupload import wipe_out_record_from_all_tables
 
 WordTable = lazy_import('invenio.legacy.bibindex.engine:WordTable')
 get_word_tables = lazy_import('invenio.legacy.bibindex.engine:get_word_tables')

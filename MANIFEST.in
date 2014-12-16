@@ -3,31 +3,31 @@ include requirements*.txt *.rst COPYING setup.cfg
 recursive-include docs *
 recursive-exclude docs/_build *
 
-recursive-include invenio_demosite/base/static *
-recursive-include invenio_demosite/base/templates *
-recursive-include invenio_demosite/base/format_elements *
-recursive-include invenio_demosite/base/format_templates *
-recursive-include invenio_demosite/base/output_formats *
-recursive-include invenio_demosite/base/bulletinext/* *
-recursive-include invenio_demosite/base/converterext/* *
-recursive-include invenio_demosite/base/documentext/* *
-recursive-include invenio_demosite/base/editorext/* *
-recursive-include invenio_demosite/base/exportext/* *
-recursive-include invenio_demosite/base/rankext/* *
-recursive-include invenio_demosite/base/recordext/* *
+recursive-include logbook/base/static *
+recursive-include logbook/base/templates *
+recursive-include logbook/base/format_elements *
+recursive-include logbook/base/format_templates *
+recursive-include logbook/base/output_formats *
+recursive-include logbook/base/bulletinext/* *
+recursive-include logbook/base/converterext/* *
+recursive-include logbook/base/documentext/* *
+recursive-include logbook/base/editorext/* *
+recursive-include logbook/base/exportext/* *
+recursive-include logbook/base/rankext/* *
+recursive-include logbook/base/recordext/* *
 
-recursive-include invenio_demosite/modules/*/static *
-recursive-include invenio_demosite/modules/*/templates *
-recursive-include invenio_demosite/modules/*/testsuite *
-recursive-include invenio_demosite/modules/*/recordext/* *
-recursive-include invenio_demosite/modules/*/converterext *
-recursive-include invenio_demosite/modules/*/documentext *
-recursive-include invenio_demosite/modules/*/editorext *
-recursive-include invenio_demosite/modules/*/exportext *
-recursive-include invenio_demosite/modules/*/format_elements *
-recursive-include invenio_demosite/modules/*/format_templates *
-recursive-include invenio_demosite/modules/*/output_formats *
-recursive-include invenio_demosite/modules/*/rankext *
+recursive-include logbook/modules/*/static *
+recursive-include logbook/modules/*/templates *
+recursive-include logbook/modules/*/testsuite *
+recursive-include logbook/modules/*/recordext/* *
+recursive-include logbook/modules/*/converterext *
+recursive-include logbook/modules/*/documentext *
+recursive-include logbook/modules/*/editorext *
+recursive-include logbook/modules/*/exportext *
+recursive-include logbook/modules/*/format_elements *
+recursive-include logbook/modules/*/format_templates *
+recursive-include logbook/modules/*/output_formats *
+recursive-include logbook/modules/*/rankext *
 
-recursive-exclude invenio_demosite/testsuite *
+recursive-exclude logbook/testsuite *
 recursive-exclude * *.pyc *.pyo

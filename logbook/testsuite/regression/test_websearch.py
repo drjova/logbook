@@ -47,7 +47,7 @@ from invenio.testsuite import make_test_suite, \
                               get_authenticated_mechanize_browser
 from invenio.utils.url import same_urls_p
 
-reindex_word_tables_into_testtables = lazy_import('invenio_demosite.testsuite.regression.test_bibindex:reindex_word_tables_into_testtables')
+reindex_word_tables_into_testtables = lazy_import('logbook.testsuite.regression.test_bibindex:reindex_word_tables_into_testtables')
 run_sql = lazy_import('invenio.legacy.dbquery:run_sql')
 GOT_DATEUTIL = lazy_import('invenio.utils.date:GOT_DATEUTIL')
 

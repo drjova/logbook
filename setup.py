@@ -15,7 +15,7 @@
 ## along with Invenio; if not, write to the Free Software Foundation, Inc.,
 ## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 
-"""Example demosite repository."""
+"""Logbook setup."""
 
 import os
 from setuptools import setup, find_packages
@@ -24,18 +24,18 @@ from setuptools import setup, find_packages
 # Load __version__, should not be done using import.
 # http://python-packaging-user-guide.readthedocs.org/en/latest/development.html#single-sourcing-the-version
 g = {}
-with open(os.path.join('invenio_demosite', 'version.py'), 'rt') as fp:
+with open(os.path.join('logbook', 'version.py'), 'rt') as fp:
     exec(fp.read(), g)
 version = g['__version__']
 
 
 setup(
-    name='Invenio-Demosite',
+    name='Logbook',
     version=version,
-    url='https://github.com/inveniosoftware/invenio-demosite',
+    url='https://github.com/egabancho/logbook',
     license='GPLv2',
     author='CERN',
-    author_email='info@invenio-software.org',
+    author_email='esteban.gabancho@cern.ch',
     description=__doc__,
     long_description=open('README.rst', 'rt').read(),
     packages=find_packages(),
@@ -62,7 +62,7 @@ setup(
     ],
     entry_points={
         'invenio.config': [
-            'demosite = invenio_demosite.config'
+            'logbook = logbook.config'
         ]
     },
     test_suite='nose.collector',
